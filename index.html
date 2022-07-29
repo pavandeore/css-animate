@@ -1,0 +1,80 @@
+<style>
+div{
+  margin: auto;
+  border-radius: 50%;
+}
+div div{
+  position: relative;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.a{
+  height:100px;
+  width:100px;
+  background: red;
+  animation: animateA 10s infinite;
+}
+.b{
+  height:70px;
+  width:70px;
+  background: green;
+  animation: animateB 8s infinite;
+}
+.c{
+  height:50px;
+  width:50px;
+  background: blue;
+  animation: animateC 6s infinite;
+}
+.d{
+  height:30px;
+  width:30px;
+  background: orange;
+  animation: animateD 4s infinite;
+}
+.e{
+  height:10px;
+  width:10px;
+  background: black;
+  animation: animateE 2s infinite;
+}
+
+
+@keyframes animateA{
+  from{height:70px;width:70px;}
+  to{height:100px;width:100px;}
+}
+@keyframes animateB{
+  from{height:50px;width:50px;}
+  to{height:70px;width:70px;}
+}
+
+@keyframes animateC{
+  from{height:30px;width:30px;}
+  to{height:50px;width:50px;}
+}
+
+@keyframes animateD{
+  from{height:10px;width:10px;}
+  to{height:30px;width:30px;}
+}
+
+@keyframes animateE{
+  from{height:0px;width:0px;}
+  to{height:10px;width:10px;}
+}
+
+
+</style>
+
+
+<div class="a">
+  <div class="b">
+    <div class="c">
+      <div class="d">
+        <div class="e"></div>
+      </div>
+    </div>
+  </div>
+</div>
